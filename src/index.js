@@ -1,3 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // your code here
+
+  let form = document.getElementById("create-task-form")
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault()
+    const theTask = document.getElementById("new-task-description").value
+    const nickname = document.getElementById("nickname").value
+    const dueDate = document.getElementById("due-date").value
+    console.log("Task Added!");
+    
+    let list = document.getElementById("list")
+    list.innerHTML += `<h5> Task: ${theTask} </h5> by ${nickname} due on ${dueDate}.`
+  
+  })
 });

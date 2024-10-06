@@ -2,16 +2,82 @@ html {
   height: 100%;
   width: 100%;
   font-family: "Titillium Web", sans-serif;
+  
+}
+
+#heading1{
+ font-family:cursive;
+ font-size:xx-large;
+ font-style:oblique;
+ color: rgb(3, 249, 249);
+}
+
+#heading2{
+ font-family:cursive;
+ font-size:large;
+ font-style:oblique;
+ color: rgb(244, 135, 2);
+}
+
+#task-description{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+#new-task-description{
+  border-radius: 5px;
+  width: 90%;
+  height: 30px;
+}
+
+#nickname-label{
+  font-style: italic;
+  font-weight: bold;
+}
+
+#due-date-label{
+  font-style: italic;
+  font-weight: bold;
+}
+
+#nickname{
+  border-radius: 5px;
+  width: 50%;
+  height: 20px;
+}
+
+#due-date{
+  border-radius: 5px;
+  width: 60%;
+  height: 20px;
 }
 
 body {
   min-height: 100%;
-  min-width: 100%;
-  background: linear-gradient(pink, violet);
+  min-width: 50%;
+  max-width: 540px;
+  margin: 100px auto 20px;
+  padding: 40 px 30px 70px;
+  background: linear-gradient(rgb(13, 13, 13), violet);
+  border-radius: 25px;
+  align-items: center;
 }
 
-button {
-  font-size: 7px;
+#tasks li{
+  list-style: none;
+  font-size: 17px;
+  user-select: none;
+  cursor: pointer;
+}
+
+#button {
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  background-color: rgb(215, 141, 141);
+  border-radius: 10px;
+  align-items: center;
+  width: 80%;
 }
 
 #main-content {
@@ -34,4 +100,5 @@ button {
   padding: 15px 20px 18px 18px;
   border-radius: 5px;
   box-shadow: 2px 5px 5px #333;
+  width: 70%;
 }

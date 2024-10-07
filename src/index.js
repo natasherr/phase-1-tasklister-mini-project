@@ -10,7 +10,12 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("Task Added!");
     
     let list = document.getElementById("list")
-    list.innerHTML += `<h5> Task: ${theTask} </h5> by ${nickname} due on ${dueDate}.`
+    list.innerHTML += `<li><h5> Task: ${theTask} </h5> by ${nickname} due on ${dueDate}.  <button id="toa"> X </button></li>`
+  
+    const toa = document.getElementById("toa")
+    toa.addEventListener("click", (event) => {
+      event.target.parentNode.remove()
+    })
   
   })
 });
